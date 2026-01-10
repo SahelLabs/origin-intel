@@ -5,7 +5,7 @@ import { AlertCircle, Zap, Brain, TrendingUp, Check, ChevronDown } from 'lucide-
 export default function OriginIntelLanding() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const handleSubmit = () => {
     if (!email || !email.includes('@')) return;
